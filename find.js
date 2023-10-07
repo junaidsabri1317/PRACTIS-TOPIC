@@ -1,8 +1,12 @@
 "use strict";
 // find arry
-let arr = ["a", "b", "c",];
+let arr = [
+    { name: "aa", age: 1 },
+    { name: "bb ", age: 2 },
+    { name: "cc", age: 3 }
+];
 let resultFind = arr.find((item) => {
     // return item == ("c")
-    return item == ("a");
+    return item.name == "aa";
 });
 console.log("This is find", resultFind);
